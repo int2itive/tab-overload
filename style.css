@@ -34,6 +34,45 @@ h2 {
 /*   letter-spacing: 1px; */
 }
 
+header {
+  width: 100%;
+}
+
+.ll-header {
+  position: fixed;
+  left: 0;
+  padding: 8px 0;
+  background-color: transparent;
+  z-index: 100;
+  transition: all .6s;
+  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out, background-color 500ms ease-out;
+}
+
+.ll-header::after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.ll-header.-hidden {
+  transform: translateY(-100%);
+}
+
+.headerDown {
+  top: 0;
+}
+
+.page-header {
+  background-color: #00020e;
+  background-color: hsla(231, 100%, 3%, .9);
+  -webkit-transition: -webkit-transform 500ms ease-out;
+  /* transition: -webkit-transform 500ms ease-out; */
+  /* transition: transform 500ms ease-out; */
+  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
+}
+
 .link--sections {
   list-style: none;
   display: flex;
