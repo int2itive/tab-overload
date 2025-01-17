@@ -1,19 +1,74 @@
 const contentContainer = document.querySelector('.main--json-content');
 const triggers = document.querySelectorAll('.category-selections li a');
-const regex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#()?&//=]*)$/gi
 const main = document.querySelector('.ll-header');
 
 let links = document.querySelectorAll('.link--sections .link a');
 let hiddenState = "-hidden";
 let nav_dark = "page-header";
 
-var threshold = 30,
-    uBound = 7, 
+let threshold = 30;
+var uBound = 7, 
     position = 0, 
     lastScroll = 0, 
     n_event = 0;
 
 let jsonData = [
+        {
+            "url": "https://www.joshwcomeau.com/animation/keyframe-animations/",
+            "title": "An Interactive Guide to Keyframe Animations",
+            "desc": "CSS keyframe animations are awesome. They're one of the most powerful, versatile tools in CSS, and we can use them for all sorts of nifty things.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/Current/glasper-1000x667_m98BNLRUWh.jpg",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://scottjehl.com/posts/using-responsive-video/",
+            "title": "How to Use Responsive HTML Video (...and Audio!)",
+            "desc": "In case you haven't already heard, you can use media queries for delivering HTML video again!",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/Current/glasper-1000x667_m98BNLRUWh.jpg",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://ryanmulligan.dev/blog/some-things-about-keyframes/",
+            "title": "Some Things About Keyframes",
+            "desc": "Whether you've barely scratched the surface of keyframe animations in CSS or fancy yourself a seasoned pro, I suggest reading An Interactive Guide to Keyframe Animations.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/Current/glasper-1000x667_m98BNLRUWh.jpg",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://jsdev.space/10-css-tips/",
+            "title": "CSS Tips You Must Know About",
+            "desc": "Staying up to date with the latest trends and best practices is essential. Here are 10 CSS tips you must know about in 2024 to enhance your web development skills and create cutting-edge designs.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/129480830_2870084836553959_2035561098756143742_n_jOWu39x5bn.jpg",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://jsdev.space/howto/understand-binding-types/",
+            "title": "Understand Binding Types in JavaScript: A Complete Guide",
+            "desc": "Understanding how this works in JavaScript is critical to mastering the language. JavaScript provides four primary ways to bind the this keyword within a function.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/jamila-woods-by-bradley-murray-12_Fyyu9YHRD.jpg",
+            "tag": "Javascript"
+        },
+        {
+            "url": "https://jsdev.space/howto/invoked-fns-js/",
+            "title": "Immediately Invoked Functions and this in JavaScript",
+            "desc": "This guide covers the basics of JavaScript's immediately invoked function expressions (IIFE), object handling, memory allocation, and the use of this in object-oriented programming.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/optional-chaining_pi86_Am08nA.jpg",
+            "tag": "Javascript"
+        },
+        {
+            "url": "https://jsdev.space/inheritance-js/",
+            "title": "Deep Dive into JavaScript Inheritance - 7 Powerful Techniques",
+            "desc": "In JavaScript, inheritance is an essential way to reuse code and manage complex object relationships. With its prototype-based model, JavaScript has several inheritance patterns, each offering unique benefits.",
+            "imgUrl": "https://jsdev.space/static/3893458614a0389e9f8f2cbec1f90f2c/658d1/inheritance-js.webp",
+            "tag": "Javascript"
+        },
+        {
+            "url": "https://jsdev.space/file-blob-js/",
+            "title": "Understanding the Difference Between File and Blob Objects",
+            "desc": "In JavaScript, both File and Blob objects are used to represent binary data, but they serve different purposes and have some distinct characteristics. Here’s a breakdown of their differences.",
+            "imgUrl": "https://jsdev.space/static/c1a94780b66212420ce00fbc4eddd8ea/be304/file-blob-js.webp",
+            "tag": "Javascript"
+        },
         {
             "url": "https://www.freecodecamp.org/news/guide-to-javascript-promises/",
             "title": "How Promises Work in JavaScript – A Comprehensive Guide",
@@ -50,6 +105,7 @@ let jsonData = [
             "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/The%20Work/c0v-members/alien-passion_d9lUYaQKa_yzSnkGEwki.jpg",
             "tag": "UI/UX"
         },
+
         {
             "url": "https://elijahmanor.com/blog/format-js-dates-and-times",
             "title": "Natively Format JavaScript Dates and Times",
@@ -131,10 +187,21 @@ let insertCode = `
   </div>
 `;
 
+links.forEach((link) => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    contentContainer.innerHTML = '';
+    let articleTag = link.textContent;
+    // jsonData.filter(entry => entry.tag === articleTag).map(function(entry) {
+    //   console.log(entry.tag);
+    // });
+    jsonData.filter(entry => entry.tag === articleTag).map(fillContainer).join('');
+  });
+});
+
 function fillContainer (displaySection) {
-  contentContainer.innerHTML = '';
+  // contentContainer.innerHTML = '';
   let { url, title, desc, imgUrl } = displaySection;
-  console.log(url);
   contentContainer.innerHTML += `
       <div class="tab--overload_wrap">
         <div class="tab--details-wrap">
@@ -152,18 +219,6 @@ function fillContainer (displaySection) {
         <p class="tab--article_desc">${desc}</p>
       </div>`;
 }
-
-links.forEach((link) => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    let articleTag = link.textContent;
-    // console.log(articleTag);
-    // jsonData.filter(entry => entry.tag === articleTag).map(function(entry) {
-    //   console.log(entry.tag);
-    // });
-    jsonData.filter(entry => entry.tag === articleTag).map(fillContainer).join('');
-  });
-});
 
 window.addEventListener("scroll", function () {
   var position = window.scrollY || document.documentElement.scrollTop;
