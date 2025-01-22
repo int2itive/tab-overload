@@ -1,13 +1,12 @@
+const main = document.querySelector('.ll-header');
+let threshold = 30;
+let hiddenState = "-hidden", nav_dark = "page-header";
 const contentContainer = document.querySelector('.main--json-content');
 const triggers = document.querySelectorAll('.category-selections li a');
 //const regex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#()?&//=]*)$/gi
-const main = document.querySelector('.ll-header');
 
 let links = document.querySelectorAll('.link--sections .link a');
-let hiddenState = "-hidden";
-let nav_dark = "page-header";
 
-let threshold = 30;
 var uBound = 7, 
     position = 0, 
     lastScroll = 0, 
