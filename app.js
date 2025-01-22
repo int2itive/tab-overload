@@ -30,3 +30,54 @@ window.addEventListener("scroll", function () {
   lastScroll = position <= 0 ? 0 : position;
 
 });
+
+let insertCode = `
+  <div class="tab--overload_wrap">
+    <div class="tab--details-wrap">
+      <div class="tab--image_wrap">
+        <a class="custom--img_link">
+          <img src="https://ik.imagekit.io/ghow2otb3rc/Projects/The%20Work/c0v-members/pexels-freestocksorg-64057_y4EMJcpg0.jpg" alt="" />
+        </a>
+      </div>
+      <div class="tab--data_details">
+        <h2 class="tab--article_title">
+          <a href="#">Resources for Beautiful and Performant Websites</a>          
+        </h2>
+      </div>
+    </div>
+    <p class="tab--article_desc">Coding Heroes article of useful front deve utilities.</p>
+  </div>
+`;
+
+function fillContainer (displaySection) {
+  // contentContainer.innerHTML = '';
+  let { url, title, desc, imgUrl } = displaySection;
+  contentContainer.innerHTML += `
+      <div class="tab--overload_wrap">
+        <div class="tab--details-wrap">
+          <div class="tab--image_wrap">
+            <a class="custom--img_link">
+              <img src="${imgUrl}" alt="" />
+            </a>
+          </div>
+          <div class="tab--data_details">
+            <h2 class="tab--article_title">
+              <a href="${url}">${title}</a>          
+            </h2>
+          </div>
+        </div>
+        <p class="tab--article_desc">${desc}</p>
+      </div>`;
+}
+
+links.forEach((link) => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    contentContainer.innerHTML = '';
+    let articleTag = link.textContent;
+    // jsonData.filter(entry => entry.tag === articleTag).map(function(entry) {
+    //   console.log(entry.tag);
+    // });
+    jsonData.filter(entry => entry.tag === articleTag).map(fillContainer).join('');
+  });
+});
