@@ -1,5 +1,12 @@
 const jsonData = [
         {
+            "url": "https://blog.hubspot.com/website/horizontal-scrolling",
+            "title": "Horizontal Scrolling in Web Design: How to Do It Well",
+            "desc": "When you think of “scrolling” on websites and applications, one direction probably comes to mind first: downward.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/Current/glasper-1000x667_m98BNLRUWh.jpg",
+            "tag": "CSS"
+        },
+        {
             "url": "https://www.joshwcomeau.com/animation/keyframe-animations/",
             "title": "An Interactive Guide to Keyframe Animations",
             "desc": "CSS keyframe animations are awesome. They're one of the most powerful, versatile tools in CSS, and we can use them for all sorts of nifty things.",
