@@ -46,6 +46,7 @@ header {
 
 .ll-header {
   position: fixed;
+  left: 0;
   width: 100%;
   z-index: 100;
   transition: all .6s;
