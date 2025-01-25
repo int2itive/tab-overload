@@ -59,6 +59,7 @@ header {
 
 .headerDown {
   top: 0;
+  padding-top: 1rem;
 }
 
 .page-header {
