@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 * {
   margin: 0;
@@ -146,5 +147,6 @@ header {
   width: 100%;
   color: #c0c0c0;
   font-family:"montserrat";
+  font-family: 'DM Sans', sans-serif;
   font-size: 12px;
 }
