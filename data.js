@@ -1,5 +1,168 @@
 const jsonData = [
         {
+            "url": "https://2019.wattenberger.com/blog/css-percents",
+            "title": "What does 100% mean in CSS?",
+            "desc": "One of the CSS units I use most is the wonderful % — so handy for positioning elements on the page.Unfortunately, the rules aren’t exactly straightforward.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/the-pleasure-of-o4_1__4kZbX7e8x-.jpg",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://gomakethings.com/mixing-colors-with-css/",
+            "title": "Mixing colors with CSS",
+            "desc": "I learned about the color-mix() CSS function. As the name implies, it lets you mix two colors together.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/the-pleasure-of-o4_1__4kZbX7e8x-.jpg",
+            "tag": "CSS"
+        },
+
+        {
+            "url": "https://medium.com/@piyushkesarwani72/javascript-dom-document-object-model-simply-explained-3a3b670c139f",
+            "title": "The DOM (Document Object Model): Simply Explained",
+            "desc": "We’ll be learning and understanding the concept of the Document Object Model in JavaScript.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/markus-spiske-hvSr_CVecVI-unsplash_y2T9sHWXc.jpg",
+            "tag": "Javascript"
+        },
+        {
+            "url": "https://medium.com/@carnevali.tech/top-10-javascript-methods-every-web-developer-should-master-ffdaceb6abe1",
+            "title": "JavaScript Methods Every Web Developer Should Master",
+            "desc": "We’re going to highlight the top 10 JavaScript methods that you should be familiar with to excel in web development.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/future-is-orange_5LpdGfeW2.jpg",
+            "tag": "Javascript"
+        },
+        {
+            "url": "https://medium.com/@avgengineerx01/attribute-attr-css-function-is-incredible-e091dacdc3f",
+            "title": "Why You Should Use Data Attributes In CSS",
+            "desc": "Today we are going to learn about the attr() function in CSS.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/5vdek9ihj4bqw8kl5zdh_NjVVvdGBU.webp",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://www.smashingmagazine.com/2021/07/hsl-colors-css/",
+            "title": "Using HSL Colors In CSS",
+            "desc": "Ahmad Shadeed explains what HSL is, how to use it, and shares some of the useful use-cases and examples.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/the-pleasure-of-o4_1__4kZbX7e8x-.jpg",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://frontender-ua.medium.com/",
+            "title": "Fresh Frontend Links",
+            "desc": "Connect with Fresh Frontend Links.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/1_HKKICkj0wCsQyi8z5oYq5g_Xd9Ci93Fc.png",
+            "tag": "Misc"
+        },
+        {
+            "url": "https://www.mongodb.com/resources/products/fundamentals/crud",
+            "title": "MongoDB CRUD Operations",
+            "desc": "CRUD is data-oriented, and it's standardized according to HTTP action verbs.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/1_HKKICkj0wCsQyi8z5oYq5g_Xd9Ci93Fc.png",
+            "tag": "Misc"
+        },
+
+        {
+            "url": "https://medium.com/@sodiq.akanmu001/transform-your-code-with-the-magic-of-this-in-javascript-a9a48bb1bf25",
+            "title": "Transform Your Code with the Magic of “this” in JavaScript",
+            "desc": "Prepare yourself for an amazing voyage through the interesting realm of “this,” where you’ll uncover the causes of its actions.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/0_3oW4MqzKSk1SuMcg_ay3F3c-Vq.png",
+            "tag": "Javascript"
+        },
+        {
+            "url": "https://blog.devgenius.io/mastering-the-art-of-div-centering-5-proven-techniques-3f0425153c47",
+            "title": "Mastering the Art of Div Centering: Proven Techniques",
+            "desc": "Centering a div might seem like a small detail in web design, but it’s a crucial one that can make or break the aesthetics of your webpage.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/0_YmsNE0ZfkcrF6TvE_D9kltAo_e.png",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://justmarkup.com/articles/2020-09-22-styling-and-animation-details/",
+            "title": "Styling the details element",
+            "desc": "In this article you will learn how to style the summary, change the default arrows, and how to animate the opening/closing.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/the-pleasure-of-o4_1__4kZbX7e8x-.jpg",
+            "tag": "Misc"
+        },
+        {
+            "url": "https://www.joshwcomeau.com/javascript/the-const-deception/",
+            "title": "The “const” Deception",
+            "desc": "Exploring the difference between assignment and mutation in JavaScript.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/0_3oW4MqzKSk1SuMcg_ay3F3c-Vq.png",
+            "tag": "Javascript"
+        },
+        {
+            "url": "https://www.joshwcomeau.com/css/height-enigma/",
+            "title": "The Height Enigma",
+            "desc": "Unraveling the mystery of percentage-based heights in CSS.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/0_YmsNE0ZfkcrF6TvE_D9kltAo_e.png",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://melanie-richards.com/blog/css-grid-sticky/?ref=heydesigner",
+            "title": "Sticky CSS Grid Items",
+            "desc": "You might have come to the conclusion that position: sticky doesn’t work with CSS Grid.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/0_YmsNE0ZfkcrF6TvE_D9kltAo_e.png",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://uxdesign.cc/creating-horizontal-scrolling-containers-the-right-way-css-grid-c256f64fc585",
+            "title": "Horizontal scrolling containers the right way - CSS Grid",
+            "desc": "Explore how the flexibility of CSS Grid can help implement a horizontal scrolling component, dealing with some of the pitfalls that comes with it.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/0_YmsNE0ZfkcrF6TvE_D9kltAo_e.png",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://piccalil.li/blog/javascript-what-is-this/",
+            "title": "JavaScript, what is this?",
+            "desc": "I’m not saying that “determining the object bound to this” makes for the lightest possible reading...",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/0_3oW4MqzKSk1SuMcg_ay3F3c-Vq.png",
+            "tag": "Javascript"
+        },
+        {
+            "url": "https://piccalil.li/blog/javascript-when-is-this/",
+            "title": "JavaScript, when is this?",
+            "desc": "this is contextual, but that context isn’t meaningful to us developers so much as it’s meaningful to JavaScript.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/0_3oW4MqzKSk1SuMcg_ay3F3c-Vq.png",
+            "tag": "Javascript"
+        },
+        {
+            "url": "https://www.joshwcomeau.com/css/height-enigma/",
+            "title": "The Height Enigma",
+            "desc": "Unraveling the mystery of percentage-based heights in CSS.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/0_YmsNE0ZfkcrF6TvE_D9kltAo_e.png",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://www.jamesbaum.co.uk/blether/vanilla-js-equivalent-jquery-find-parent-data-remove-class-empty-append/",
+            "title": "JS equivalent of common jQuery functions",
+            "desc": "Here's the vanilla (plain) Javascript versions of some common jQuery functions.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/0_3oW4MqzKSk1SuMcg_ay3F3c-Vq.png",
+            "tag": "Javascript"
+        },
+        {
+            "url": "https://chenhuijing.com/blog/on-fixed-elements-and-backgrounds/",
+            "title": "On fixed elements and backgrounds",
+            "desc": "If you have a fixed element on your page, it no longer acts fixed if you apply a CSS filter on its nearest ancestor.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/0_YmsNE0ZfkcrF6TvE_D9kltAo_e.png",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://dev.to/rolandixor/achieving-backdrop-blur-without-backdrop-filter-16ii",
+            "title": "Achieving backdrop blur without 'backdrop-filter'",
+            "desc": "At the time of writing* it's rather popular to go for a 'glass look' in your designs.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/0_YmsNE0ZfkcrF6TvE_D9kltAo_e.png",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://css-tricks.com/on-fixed-elements-and-backgrounds/",
+            "title": "On fixed elements and backgrounds",
+            "desc": "Because applying a filter on the fixed element’s immediate parent makes it become the containing block instead of the viewport.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/the-pleasure-of-o4_1__4kZbX7e8x-.jpg",
+            "tag": "CSS"
+        },
+        {
+            "url": "https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/",
+            "title": "A Complete Guide To Accessible Front-End Components",
+            "desc": "In a new short series of posts, we look into reliable accessible components: from tabs and tables to toggles and tooltips.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/the-pleasure-of-o4_1__4kZbX7e8x-.jpg",
+            "tag": "CSS"
+        },
+        {
             "url": "https://blog.hubspot.com/website/horizontal-scrolling",
             "title": "Horizontal Scrolling in Web Design: How to Do It Well",
             "desc": "When you think of “scrolling” on websites and applications, one direction probably comes to mind first: downward.",
