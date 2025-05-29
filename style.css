@@ -43,6 +43,7 @@ h3 {
 header {
   width: 100%;
   background: rgba(11, 10, 16);  
+  padding: .5rem 0 .75rem;
 }
 
 .ll-header {
@@ -60,7 +61,7 @@ header {
 
 .headerDown {
   top: 0;
-  padding-top: 1rem;
+  padding-top: .5rem;
 }
 
 .page-header {
