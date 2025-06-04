@@ -1,5 +1,12 @@
 const jsonData = [
         {
+            "url": "https://codepen.io/tomhermans/pen/dPoXWoY",
+            "title": "Typescale Calculator with Clamp",
+            "desc": "One of the CSS units I use most is the wonderful % — so handy for positioning elements on the page.Unfortunately, the rules aren’t exactly straightforward.",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/the-pleasure-of-o4_1__4kZbX7e8x-.jpg",
+            "tag": "CSS"
+        },
+        {
             "url": "https://2019.wattenberger.com/blog/css-percents",
             "title": "What does 100% mean in CSS?",
             "desc": "One of the CSS units I use most is the wonderful % — so handy for positioning elements on the page.Unfortunately, the rules aren’t exactly straightforward.",
