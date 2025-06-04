@@ -3,7 +3,7 @@ const jsonData = [
             "url": "https://codepen.io/tomhermans/pen/dPoXWoY",
             "title": "Typescale Calculator with Clamp",
             "desc": "One of the CSS units I use most is the wonderful % — so handy for positioning elements on the page.Unfortunately, the rules aren’t exactly straightforward.",
-            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/the-pleasure-of-o4_1__4kZbX7e8x-.jpg",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/674d90f7cf52dd961b48a1e2_slide-2_907WXrqF0.png",
             "tag": "CSS"
         },
         {
@@ -68,7 +68,7 @@ const jsonData = [
             "url": "https://medium.com/@sodiq.akanmu001/transform-your-code-with-the-magic-of-this-in-javascript-a9a48bb1bf25",
             "title": "Transform Your Code with the Magic of “this” in JavaScript",
             "desc": "Prepare yourself for an amazing voyage through the interesting realm of “this,” where you’ll uncover the causes of its actions.",
-            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/0_3oW4MqzKSk1SuMcg_ay3F3c-Vq.png",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/bg_RMdr1Of2k.jpeg",
             "tag": "Javascript"
         },
         {
@@ -294,7 +294,7 @@ const jsonData = [
             "url": "https://mastery.games/post/overlapping-grid-items/",
             "title": "Overlapping Grid Items",
             "desc": "Now that CSS Grid has arrived, we're starting to see more and more magazine style layouts on the web. And for good reason.",
-            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/cbc029ab57a8495195bf6b4061e2cb2f_Qgk527FNL.jpg",
+            "imgUrl": "https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/674d90f74ff2fe8b0b912b97_slide-1_STJdRq_aJ.png",
             "tag": "Grid"
         },
         {
