@@ -3,6 +3,7 @@ let threshold = 30;
 let hiddenState = "-hidden", nav_dark = "page-header";
 const contentContainer = document.querySelector('.main--json-content');
 const triggers = document.querySelectorAll('.category-selections li a');
+const ul = document.querySelector('.link--sections');
 //const regex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#()?&//=]*)$/gi
 
 let links = document.querySelectorAll('.link--sections .link a');
@@ -75,6 +76,7 @@ links.forEach((link) => {
     e.preventDefault();
     contentContainer.innerHTML = '';
     let articleTag = link.textContent;
+    ul.dataset.comment = `Current Links: ${articleTag}`;
     // jsonData.filter(entry => entry.tag === articleTag).map(function(entry) {
     //   console.log(entry.tag);
     // });
