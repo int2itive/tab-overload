@@ -43,7 +43,7 @@ h3 {
 header {
   width: 100%;
   background: rgba(11, 10, 16);  
-  padding: .5rem 0 .75rem;
+  padding: .5rem 0 1.25rem;
 }
 
 .ll-header {
@@ -70,11 +70,25 @@ header {
 }
 
 .link--sections {
+  position: relative;
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
+}
+
+.link--sections::after {
+  position: absolute;
+  content: attr(data-comment);
+  top: 115%;
+  left: 0;
+  width: 100%;
+  font-family: 'DM-Sans', sans-serif;
+  color: #c0c0c0;
+  font-size: 11px;
+  text-align: right;
+  padding-inline-end: 1.7rem;
 }
 
 .link--sections .link {
